@@ -66,7 +66,7 @@ namespace UnityEngine.Perception.GroundTruth
                     m_DistortedTexture.Release();
 
                 m_DistortedTexture = new RenderTexture(Screen.width, Screen.height, 0, RenderTextureFormat.ARGBFloat, RenderTextureReadWrite.Linear);
-                m_DistortedTexture.enableRandomWrite = true;
+                m_DistortedTexture.enableRandomWrite = false;
                 m_DistortedTexture.filterMode = FilterMode.Point;
                 m_DistortedTexture.Create();
             }
